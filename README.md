@@ -1,6 +1,4 @@
-A small extension over pykrige to support GridSearchCV and automatically fit the krige model over regression's model error. The ErrorKrigeRegressionAdapter is used to combine a regression class and Krige. 
-The [Krige model](https://en.wikipedia.org/wiki/Kriging) is calculated over the besic_regressor errors if errors have geo correlation. The geo correlation is calculated automatically via a Moran value.
-Read more about Kriging [here](https://link.springer.com/chapter/10.1007/978-3-319-78999-6_29).
+A small extension over pykrige to support GridSearchCV and automatically fit a krige regression model over regression's model error. ErrorKrigeRegressionAdapter is used to combine a regression class and the krige regression model. The Krige regression model is calculated over the besic_regressor errors if errors are spatially correlated. The geo correlation is calculated automatically via the Moran's I index. Read more about Kriging [here](https://link.springer.com/chapter/10.1007/978-3-319-78999-6_29).
 
 **basic_regressor** - the basic regressor model that you would like to use 
 
